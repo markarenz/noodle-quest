@@ -1,0 +1,78 @@
+.tile{
+  position:absolute;
+  //width:40px;
+  //height:20px;
+  .wallWest{
+    position:absolute;
+    //top:-10px;
+    left:0;
+  }
+  .stairsUp{
+    position:absolute;
+  }
+  .stairsDownHole{
+    fill: #888;
+  }
+  .ladderDownLine{
+    stroke: #000;
+    stroke-width: 1px;
+  }
+  .ladderLine{
+    stroke: #333;
+    stroke-width: 2px;
+  }
+  .wallNorth{
+    position:absolute;
+    //top:-10px;
+    //left:20px;
+  }
+  //.wallEast{
+  //  position:absolute;
+  //  top:0px;
+  //  left:20px;
+  //}
+  //.wallSouth{
+  //  position:absolute;
+  //  top:0px;
+  //  left:0;
+  //}
+}
+
+.editorTile{
+  width:80px;
+  height:40px;
+  .wallWest{
+    position:absolute;
+    top:-20px;
+    left:0;
+  }
+  .wallNorth{
+    position:absolute;
+    top:-20px;
+    left:40px;
+  }
+  .wallEast{
+    position:absolute;
+    top:0;
+    left:40px;
+    z-index:999;
+  }
+  .wallSouth{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:999;
+  }
+}
+.editorSelectedIndicator{
+  position:absolute;
+  top:-10px;
+  left:-10px;
+  z-index:99999;
+}
+.tileBG{
+  fill: #666;
+  &.tileBGEditorActive{
+    fill: #dd0000;
+  }
+}

@@ -1,0 +1,119 @@
+.controlsWrap{
+  position: absolute;
+  bottom:140px;
+  left:20px;
+  .tileBtn{
+    border: none;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position:absolute;
+    &.active{
+      &:hover{
+        z-index:30;
+        .btnBg {
+          fill: #444;
+        }
+      }
+    }
+    .btnIcon{
+      opacity:.5;
+      pointer-events: none;
+      &.active{
+        opacity:1;
+      }
+    }
+    .btnIconDeco{
+      pointer-events: none;
+    }
+    .btnBg{
+      stroke: white;
+      fill: #888;
+      cursor: pointer;
+      transition: 0.25s fill ease-out;
+    }
+    &:focus {
+      outline:0;
+    }
+    .tileBtnSvg{
+      position:absolute;
+      top:0;
+      left:0;
+      width: 120px;
+      height: 60px;
+    }
+    .tileBtnDeco{
+      position:absolute;
+      top:0;
+      left:0;
+      width: 80px;
+      height: 40px;
+    }
+  }
+}
+
+.scoreDisp{
+  color: white;
+  font-size: 30px;
+  position:absolute;
+  right:10px;
+  top:10px;
+  text-shadow: 2px 2px 0 rgba(0,0,0,.8);
+}
+
+.inventory{
+  position:absolute;
+  right:10px;
+  top:40px;
+  .invItem{
+    -webkit-appearance: none;
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    background-color: #eee;
+    border: none;
+    position:absolute;
+    right:5px;
+    transition: .2s all ease-out;
+    transform: scale(1);
+    border:2px solid #444;
+    &:focus{
+      background-color:purple;
+    }
+    &:hover{
+      transform: scale(1.1);
+      background-color:#EFC430;
+    }
+    img{
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: -30px;
+      left: -30px;
+    }
+    .badge{
+      span{
+        display:none;
+      }
+      &.active{
+        span{
+          display:flex;
+        }
+      }
+      span{
+        top: -24px;
+        right: -24px;
+        padding: 13px 10px;
+        border-radius: 50%;
+        background-color: #7e448a;
+      }
+    }
+  }
+}
+
+.btnQuit{
+  position:absolute;
+  right:10px;
+  bottom:10px;
+}

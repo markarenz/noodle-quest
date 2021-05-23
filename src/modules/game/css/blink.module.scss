@@ -1,0 +1,158 @@
+.blink{
+  position:absolute;
+  width:100%;height:100%;
+}
+.blinkWrap{
+  position:absolute;
+  left:0;top:0;
+  width:100%;
+  height:100%;
+  pointer-events: none;
+  .blinklet{
+    d: path("M 50, 50 L 50 50");
+    stroke: yellow;
+    stroke-width: 4;
+    stroke-dasharray: 8;
+    stroke-linecap: round;
+    opacity:1;
+    background-color: yellow;
+    &.blink1{
+      animation: blink1 0.5s ease-out;
+    }
+    &.blink2{
+      animation: blink2 0.5s ease-out;
+    }
+    &.blink3{
+      animation: blink3 0.5s ease-out;
+    }
+    &.blink4{
+      animation: blink4 0.5s ease-out;
+    }
+    &.blink5{
+      animation: blink5 0.5s ease-out;
+    }
+    &.blink6{
+      animation: blink6 0.5s ease-out;
+    }
+    &.blink7{
+      animation: blink7 0.5s ease-out;
+    }
+    &.blink8{
+      animation: blink8 0.5s ease-out;
+    }
+  }
+}
+
+@keyframes blink1 {
+  0% {
+    d: path("M 50, 50 L 50 50");
+    opacity:1;
+  }
+  50% {
+    d: path("M 50, 50 L 20 20");
+    opacity:1;
+  }
+  100% {
+    d: path("M 20, 20 L 20 20");
+    opacity:1;
+  }
+}
+@keyframes blink2 {
+  0% {
+    d: path("M 50, 50 L 50 50");
+    opacity:1;
+  }
+  50% {
+    d: path("M 50, 50 L 80 20");
+    opacity:1;
+  }
+  100% {
+    d: path("M 80, 20 L 80 20");
+    opacity:1;
+  }
+}
+@keyframes blink3 {
+  0% {
+    d: path("M 50, 50 L 50 50");
+    opacity:1;
+  }
+  50% {
+    d: path("M 50, 50 L 80 80");
+    opacity:1;
+  }
+  100% {
+    d: path("M 80, 80 L 80 80");
+    opacity:1;
+  }
+}
+@keyframes blink4 {
+  0% {
+    d: path("M 50, 50 L 50 50");
+    opacity:1;
+  }
+  50% {
+    d: path("M 50, 50 L 20 80");
+    opacity:1;
+  }
+  100% {
+    d: path("M 20, 80 L 20 80");
+    opacity:1;
+  }
+}
+@keyframes blink5 {
+  0% {
+    d: path("M 50, 50 L 50 50");
+    opacity:1;
+  }
+  50% {
+    d: path("M 50, 50 L 10 50");
+    opacity:1;
+  }
+  100% {
+    d: path("M 10, 50 L 10 50");
+    opacity:1;
+  }
+}
+@keyframes blink6 {
+  0% {
+    d: path("M 50, 50 L 50 50");
+    opacity:1;
+  }
+  50% {
+    d: path("M 50, 50 L 90 50");
+    opacity:1;
+  }
+  100% {
+    d: path("M 90, 50 L 90 50");
+    opacity:1;
+  }
+}
+@keyframes blink7 {
+  0% {
+    d: path("M 50, 50 L 50 50");
+    opacity:1;
+  }
+  50% {
+    d: path("M 50, 50 L 50 30");
+    opacity:1;
+  }
+  100% {
+    d: path("M 50, 30 L 50 30");
+    opacity:1;
+  }
+}
+@keyframes blink8 {
+  0% {
+    d: path("M 50, 50 L 50 50");
+    opacity:1;
+  }
+  50% {
+    d: path("M 50, 50 L 50 70");
+    opacity:1;
+  }
+  100% {
+    d: path("M 50, 70 L 50 70");
+    opacity:1;
+  }
+}
+

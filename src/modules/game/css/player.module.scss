@@ -1,0 +1,100 @@
+$walkCycleLength: 0.2s;
+$standCycleLength: 0.4s;
+.playerSvg{
+}
+.player{
+  position:absolute;
+  &.anim{
+    transition: 0.2s all ease-out;
+  }
+  animation: none;
+  &.goingUp{
+    transition: none;
+    animation: playerGoingUp 1.2s linear;
+  }
+  &.goingDown{
+    animation: playerGoingDown 1.2s linear;
+  }
+  .torso{
+    //fill: #448a6f;
+  }
+  .face{
+    //fill: #c492ce;
+  }
+  .wing{
+    fill: rgba(255,255,255,.25);
+    stroke: rgba(255,255,255,.5);
+  }
+}
+
+.footLeft{
+  //transition: $walkCycleLength all ease-in-out;
+  &.faceN,
+  &.faceW,
+  &.faceS,
+  &.faceE{
+    cx: 11;
+    cy: 19;
+    &.step1{
+      cx: 13;
+      cy: 19;
+    }
+  }
+}
+
+
+.footRight{
+  //transition: $walkCycleLength all ease-in-out;
+  &.faceN,
+  &.faceW,
+  &.faceS,
+  &.faceE{
+    cx: 8;
+    cy: 19;
+    &.step1{
+      cx: 7;
+      cy: 19;
+    }
+  }
+}
+
+@keyframes playerGoingUp {
+  0% {
+    transform: translateY(0);
+    opacity:1;
+  }
+  40% {
+    transform: translateY(-12vw);
+    opacity:0;
+  }
+  74% {
+    transform: translateY(-12vw);
+    opacity:0;
+  }
+  75% {
+    transform: translateY(12vw);
+    opacity:0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity:1;
+  }
+}
+@keyframes playerGoingDown {
+  0% {
+    transform: translateY(0);
+    opacity:1;
+  }
+  49% {
+    transform: translateY(12vw);
+    opacity:0;
+  }
+  50% {
+    transform: translateY(-12vw);
+    opacity:0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity:1;
+  }
+}

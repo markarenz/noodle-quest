@@ -1,0 +1,30 @@
+.header{
+  .headerToolbar{
+    justify-content: space-between;
+  }
+  .floorNum{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    .floorIcon{
+      //font-size:60px;
+      width:40px;
+      height:40px;
+      cursor:pointer;
+    }
+    .numLabel{
+      display:block;
+      font-size:16px;
+      line-height:1;
+      width:100%;
+      text-align:center;
+    }
+    .numDisp{
+      display:inline-block;
+      text-align:center;
+      font-size:30px;
+      width:50px;
+    }
+  }
+
+}
