@@ -1,5 +1,5 @@
 import React from 'react';
-import css from 'modules/home/css/home.module.scss';
+import css from '../css/home.module.scss';
 import PropTypes from 'prop-types';
 
 const Noodle = ({ delay}) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import css from 'modules/game/css/tile.module.scss'
+import css from '../css/tile.module.scss'
 
 export const Tile = ({tileData, calcXPos, calcYPos, calcZPos, gameScale}) => { // unitX, unitY
     const l = calcXPos(tileData.x, tileData.y, false, 0, 0, gameScale);

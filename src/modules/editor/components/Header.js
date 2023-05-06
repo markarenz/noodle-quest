@@ -2,7 +2,7 @@ import React from 'react';
 import { AppBar, Toolbar, Button } from '@material-ui/core';
 import { ArrowForward as IconUp, ArrowBack as IconDown} from '@material-ui/icons';
 
-import css from 'modules/editor/css/header.module.scss';
+import css from '../css/header.module.scss';
 
 const Header = ({
                     handleCopyDataAreas,

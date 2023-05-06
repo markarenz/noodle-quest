@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import { Game } from 'modules/game/containers';
-import { Editor } from 'modules/editor/containers';
-import { Home } from 'modules/home/containers';
+import { Game } from './modules/game/containers';
+import { Editor } from './modules/editor/containers';
+import { Home } from './modules/home/containers';
 
-import 'modules/base/css/app.scss';
+import './modules/base/css/app.scss';
 
 const App = () => {
     return (

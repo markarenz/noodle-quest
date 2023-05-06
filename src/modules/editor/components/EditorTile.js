@@ -1,5 +1,5 @@
 import React from 'react';
-import css from 'modules/editor/css/editor.module.scss';
+import css from '../css/editor.module.scss';
 
 const Tile = ({ x, y, area, mapObjTypes, setWallType, setTileType, editorMode, placeItem }) => { // gridMaxX, gridMaxY
     const l = (x * 50);

@@ -1,8 +1,8 @@
 import React from 'react';
 import {Dialog, DialogContent, DialogActions, Button, Grid, Slide, DialogTitle, IconButton} from '@material-ui/core';
 import PropTypes from 'prop-types';
-import css from 'modules/game/css/dialogue.module.scss';
 import {Close as IconClose} from "@material-ui/icons";
+import css from '../css/dialogue.module.scss';
 
 const TeleporterDialog = ({ teleporterOpen, teleportSpots, handleTeleportClose, handleTeleportSelect}) => {
     if (!teleporterOpen){
