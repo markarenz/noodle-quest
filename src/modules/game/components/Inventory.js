@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconButton, Badge } from '@material-ui/core';
 import PropTypes from 'prop-types';
-import css from 'modules/game/css/hud.module.scss';
+import css from '../css/hud.module.scss';
 
 const Inventory = ({ inventoryItems, handleInventoryClick }) => {
     const invItemsStripped = inventoryItems.map((item) => item.objType);

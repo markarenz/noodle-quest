@@ -1,7 +1,7 @@
 import React from 'react';
-import playerLimbAnims from 'data/playerLimbAnims';
-import css from 'modules/game/css/player.module.scss'
 import PropTypes from "prop-types";
+import playerLimbAnims from '../../../data/playerLimbAnims';
+import css from '../css/player.module.scss'
 
 const Player = ({x, y, calcXPos, calcYPos, calcZPos, gameScale, playerFacing, playerStep, inTransition, maxZ, playerAnim}) => {
     const l = calcXPos(x, y, true, 20 * gameScale, 20 * gameScale, gameScale);

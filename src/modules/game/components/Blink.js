@@ -1,6 +1,6 @@
 import React from 'react';
-import css from "modules/game/css/blink.module.scss";
-import blinkAnims from "data/blinkAnims";
+import css from "../css/blink.module.scss";
+import blinkAnims from "../../../data/blinkAnims";
 import PropTypes from 'prop-types';
 
 const Blink = ({ x, y, blinkHash, gameScale, calcXPos, calcYPos, calcZPos }) => {

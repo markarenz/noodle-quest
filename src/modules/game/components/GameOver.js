@@ -1,8 +1,8 @@
 import React from 'react';
 import { Dialog, DialogContent, DialogTitle, DialogActions, Button } from '@material-ui/core';
 import { withRouter } from 'react-router-dom';
-import css from 'modules/game/css/gameover.module.scss';
 import PropTypes from 'prop-types';
+import css from '../css/gameover.module.scss';
 
 const GameOver = ({ resetGame, history }) => {
     const handleReturnClick = () => {

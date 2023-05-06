@@ -1,6 +1,5 @@
 import React from 'react';
-import mapObjTypes from 'data/mapObjTypes';
-// import { Button } from '@material-ui/core';
+import { ToastContainer, toast } from 'react-toastify';
 import {
     Tile,
     Player,
@@ -15,13 +14,13 @@ import {
     GameOverConfetti,
     Sign,
     TeleporterDialog,
-} from 'modules/game/components/'
-import itemData from 'data/itemData';
-import areaData from 'data/areaData';
-import { ToastContainer, toast } from 'react-toastify';
+} from '../components';
+import mapObjTypes from '../../../data/mapObjTypes';
+import itemData from '../../../data/itemData';
+import areaData from '../../../data/areaData';
 
 import 'react-toastify/dist/ReactToastify.css';
-import css from 'modules/game/css/game.module.scss';
+import css from '../css/game.module.scss';
 
 const Game = ({ setUiMode }) => {
     const [areaState, setAreaState] = React.useState(areaData);

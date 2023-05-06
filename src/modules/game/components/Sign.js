@@ -1,7 +1,7 @@
 import React from 'react';
 import { Dialog, DialogContent, DialogActions, Button, Grid, Slide } from '@material-ui/core';
 import PropTypes from 'prop-types';
-import css from 'modules/game/css/dialogue.module.scss';
+import css from '../css/dialogue.module.scss';
 
 const Dialogue = ({ text, handleSignClose }) => {
     if (text === ''){

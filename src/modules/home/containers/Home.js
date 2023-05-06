@@ -1,10 +1,9 @@
 import React from 'react';
 import { Grid, Container, Drawer, IconButton } from '@material-ui/core';
-import { Noodle } from 'modules/home/components';
 import { Close as IconClose, PlayArrow as IconPlay, LiveHelp as IconInfo, ExitToApp as IconExit } from '@material-ui/icons';
-
 import { Link } from 'react-router-dom';
-import css from 'modules/home/css/home.module.scss';
+import { Noodle } from '../components';
+import css from '../css/home.module.scss';
 
 const Home = () => {
     const explainerContent = [

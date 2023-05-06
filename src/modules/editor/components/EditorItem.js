@@ -1,5 +1,5 @@
 import React from 'react';
-import css from 'modules/editor/css/editor.module.scss';
+import css from '../css/editor.module.scss';
 
 const EditorItem = ({ item, handleItemClick, editorMode }) => {
     const l = (item.x * 50);

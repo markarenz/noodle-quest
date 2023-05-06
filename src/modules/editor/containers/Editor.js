@@ -1,19 +1,18 @@
 import React from 'react';
-import { EditorTile, Header, EditorItem } from 'modules/editor/components';
 import { TextField, Button, Grid, Tabs, Tab, FormControl, Input, InputLabel } from '@material-ui/core';
-import TabPanel from 'modules/editor/components/TabPanel';
-import mapObjTypes from 'data/mapObjTypes';
 import Draggable from 'react-draggable';
-import itemData from 'data/itemData';
-import areaData from 'data/areaData';
-
 import { Delete as IconDelete,
-    ArrowBack as IconLeft,
-    ArrowForward as IconRight,
-    ArrowUpward as IconUp,
-    ArrowDownward as IconDown
+  ArrowBack as IconLeft,
+  ArrowForward as IconRight,
+  ArrowUpward as IconUp,
+  ArrowDownward as IconDown
 } from "@material-ui/icons";
-import css from 'modules/editor/css/editor.module.scss';
+import { EditorTile, Header, EditorItem } from '../components';
+import TabPanel from '../components/TabPanel';
+import mapObjTypes from '../../../data/mapObjTypes';
+import itemData from '../../../data/itemData';
+import areaData from '../../../data/areaData';
+import css from '../css/editor.module.scss';
 
 const Editor = () => {
     const [areaState, setAreaState] = React.useState(areaData);

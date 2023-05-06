@@ -1,9 +1,9 @@
 import React from 'react';
-import { Dialog, DialogContent, DialogTitle, DialogActions, Button, IconButton, Grid } from '@material-ui/core';
 import PropTypes from 'prop-types';
-import dialogueData from "data/dialogueData";
+import { Dialog, DialogContent, DialogTitle, DialogActions, Button, IconButton, Grid } from '@material-ui/core';
 import { Close as IconClose } from '@material-ui/icons';
-import css from 'modules/game/css/dialogue.module.scss';
+import dialogueData from "../../../data/dialogueData";
+import css from '../css/dialogue.module.scss';
 
 const Dialogue = ({ dialogueOpenNpc, handleDialogClose }) => {
     const [cursor, setCursor] = React.useState('intro');

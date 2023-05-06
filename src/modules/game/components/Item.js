@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import css from 'modules/game/css/item.module.scss'
+import css from '../css/item.module.scss'
 
 export const Item = ({item, calcXPos, calcYPos, calcZPos, gameScale, numNoodles, maxNoodles}) => {
     const x = item.x;

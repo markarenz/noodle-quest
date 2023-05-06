@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import css from 'modules/game/css/hud.module.scss';
+import css from '../css/hud.module.scss';
 
 const ScoreDisp = ({score}) => {
     return (
