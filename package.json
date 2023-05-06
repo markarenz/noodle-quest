@@ -5,11 +5,6 @@
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "@material-ui/icons": "^4.9.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "node-sass": "^4.13.1",
-    "prop-types": "^15.7.2",
     "react": "^16.13.0",
     "react-confetti": "^5.0.1",
     "react-dom": "^16.13.0",
@@ -17,6 +12,13 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "react-toastify": "^5.5.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "prop-types": "^15.7.2",
+    "sass": "^1.62.1"
   },
   "scripts": {
     "start": "react-scripts start",
